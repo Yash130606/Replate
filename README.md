@@ -589,5 +589,6 @@ bun run format       # Auto-format all files
 - **Static file serving** — Uploaded files are stored in `backend/uploads/` and served at `/uploads/<filename>` via FastAPI's `StaticFiles` mount.
 
 - **Alembic heads** — Two merge migrations have been applied: `c1d2e3f4a5b6` (NGO + auth branch merge) and `cd9d50548025` (donor_role + password_hash merge). Always run `uv run alembic heads` to check for multiple heads before creating a new migration. If you see multiple heads, run `uv run alembic merge heads -m "merge_description"` then `uv run alembic upgrade heads`.
-#   R e p l a t e  
+#   R e p l a t e 
+ 
  
